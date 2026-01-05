@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B5CF6"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Header with student emoji -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="👨‍🎓"
+            android:textSize="100sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Main Signup Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="28dp"
+            android:elevation="10dp"
+            android:backgroundTint="#FFFFFF">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nouveau compte"
+                android:textSize="28sp"
+                android:textColor="#2D3748"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Créez votre compte étudiant"
+                android:textSize="16sp"
+                android:textColor="#718096"
+                android:layout_marginBottom="28dp" />
+
+            <!-- Form Fields -->
+            <!-- Nom -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Nom"
+                android:textSize="14sp"
+                android:textColor="#4A5568"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Votre nom"
+                android:inputType="textCapWords"
+                android:background="#FFFFFF"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Prenom -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prénom"
+                android:textSize="14sp"
+                android:textColor="#4A5568"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/prenom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Votre prénom"
+                android:inputType="textCapWords"
+                android:background="#FFFFFF"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Email"
+                android:textSize="14sp"
+                android:textColor="#4A5568"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email@exemple.com"
+                android:inputType="textEmailAddress"
+                android:background="#FFFFFF"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- CIN -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" CIN"
+                android:textSize="14sp"
+                android:textColor="#4A5568"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/cin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numéro CIN"
+                android:inputType="number"
+                android:background="#FFFFFF"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Mot de passe"
+                android:textSize="14sp"
+                android:textColor="#4A5568"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="••••••••"
+                android:inputType="textPassword"
+                android:background="#FFFFFF"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                android:layout_marginBottom="28dp" />
+
+            <!-- Signup Button -->
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Créer mon compte"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#8B5CF6"
+                android:textColor="#FFFFFF"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+        <!-- Info Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F1F5F9"
+            android:padding="16dp"
+            android:layout_marginTop="24dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📋 Informations requises"
+                android:textSize="16sp"
+                android:textColor="#4F46E5"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• CIN : Votre numéro de carte d'identité nationale\n• Email : Utilisez votre email académique\n• Mot de passe : Minimum 8 caractères"
+                android:textSize="14sp"
+                android:textColor="#64748B"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Démarrez votre parcours académique ✨"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

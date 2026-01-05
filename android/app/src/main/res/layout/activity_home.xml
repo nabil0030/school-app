@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0F14"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <!-- Top Bar with Login/Signup Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginBottom="24dp"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connexion"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#22C55E"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inscription"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#22C55E"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="12dp" />
+        </LinearLayout>
+
+        <!-- Header with App Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="École Numérique"
+                    android:textSize="32sp"
+                    android:textColor="#22C55E"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.02" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inscription numérique sécurisée"
+                    android:textSize="16sp"
+                    android:textColor="#94A3B8" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Welcome Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E293B"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp"
+            android:backgroundTint="#1E293B">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenue"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cette application permet l'inscription à une école et la vérification des informations des étudiants à partir des images du baccalauréat et de la carte d'identité nationale (CIN), grâce à la reconnaissance optique de caractères."
+                android:textSize="16sp"
+                android:textColor="#CBD5E1"
+                android:lineSpacingExtra="6dp" />
+        </LinearLayout>
+
+        <!-- Objective Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E293B"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp"
+            android:backgroundTint="#1E293B">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Objectif de l'application"
+                android:textSize="20sp"
+                android:textColor="#22C55E"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="L'application permet l'inscription des étudiants à une école en utilisant une approche numérique intelligente basée sur l'analyse d'images."
+                android:textSize="16sp"
+                android:textColor="#CBD5E1"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elle exploite les images des documents officiels suivants :"
+                android:textSize="16sp"
+                android:textColor="#CBD5E1"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• "
+                    android:textSize="16sp"
+                    android:textColor="#22C55E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Le baccalauréat"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• "
+                    android:textSize="16sp"
+                    android:textColor="#22C55E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="La carte d'identité nationale (CIN)"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- How It Works -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E293B"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp"
+            android:backgroundTint="#1E293B">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment ça marche ?"
+                android:textSize="20sp"
+                android:textColor="#22C55E"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Step 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textColor="#0A0F14"
+                    android:gravity="center"
+                    android:background="#22C55E"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Création ou connexion à un compte étudiant"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+
+            <!-- Step 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="2"
+                    android:textSize="16sp"
+                    android:textColor="#0A0F14"
+                    android:gravity="center"
+                    android:background="#22C55E"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Téléversement des images de la CIN et du baccalauréat"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+
+            <!-- Step 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="3"
+                    android:textSize="16sp"
+                    android:textColor="#0A0F14"
+                    android:gravity="center"
+                    android:background="#22C55E"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extraction automatique des informations grâce à l'OCR"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+
+            <!-- Step 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="4"
+                    android:textSize="16sp"
+                    android:textColor="#0A0F14"
+                    android:gravity="center"
+                    android:background="#22C55E"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vérification et confirmation des données extraites"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+
+            <!-- Step 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:text="5"
+                    android:textSize="16sp"
+                    android:textColor="#0A0F14"
+                    android:gravity="center"
+                    android:background="#22C55E"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finalisation de l'inscription"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Benefits Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#15202B"
+            android:padding="24dp"
+            android:layout_marginBottom="32dp"
+            android:elevation="8dp"
+            android:backgroundTint="#15202B">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avantages"
+                android:textSize="20sp"
+                android:textColor="#22C55E"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✓ "
+                    android:textSize="16sp"
+                    android:textColor="#22C55E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Réduction des erreurs humaines"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✓ "
+                    android:textSize="16sp"
+                    android:textColor="#22C55E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accélération des procédures administratives"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✓ "
+                    android:textSize="16sp"
+                    android:textColor="#22C55E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vérification sécurisée de l'identité"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✓ "
+                    android:textSize="16sp"
+                    android:textColor="#22C55E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expérience utilisateur améliorée"
+                    android:textSize="16sp"
+                    android:textColor="#CBD5E1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Une solution moderne pour l'éducation numérique"
+            android:textSize="14sp"
+            android:textColor="#64748B"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

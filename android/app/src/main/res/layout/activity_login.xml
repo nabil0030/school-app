@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#667EEA"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Decorative top -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="📚"
+        android:textSize="80sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Main Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="32dp"
+        android:elevation="8dp"
+        android:backgroundTint="#FFFFFF">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👋 Bon retour !"
+            android:textSize="28sp"
+            android:textColor="#2D3748"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connectez-vous à votre compte"
+            android:textSize="16sp"
+            android:textColor="#718096"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Email Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📧 Email"
+            android:textSize="14sp"
+            android:textColor="#4A5568"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="votre.email@exemple.com"
+            android:inputType="textEmailAddress"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Password Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔒 Mot de passe"
+            android:textSize="14sp"
+            android:textColor="#4A5568"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="••••••••"
+            android:inputType="textPassword"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:elevation="2dp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se connecter"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#667EEA"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Signup Link -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nouveau sur l'app ? "
+                android:textSize="14sp"
+                android:textColor="#718096" />
+
+            <TextView
+                android:id="@+id/goSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Créer un compte"
+                android:textSize="14sp"
+                android:textColor="#667EEA"
+                android:textStyle="bold"
+                android:padding="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨ Sécurisé et facile à utiliser ✨"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>
